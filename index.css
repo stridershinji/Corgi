@@ -1,0 +1,42 @@
+  html, body {
+    margin:0;
+  }
+  
+  #imageContainer {
+    height: 700px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #pic {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .zoomIn {
+    transform: scale(1.2);
+    transition: all 0.7s;
+  }
+
+  .zoomOut {
+    transform: scale(0.8);
+    transition: all 0.7s;
+  }
+
+ #controlContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .zoomControl {
+   height: 30px;
+   width: 30px;
+   box-sizing: border-box;
+   border: 1px solid green;
+   margin: 10px 5px;
+ }
